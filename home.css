@@ -1,0 +1,64 @@
+/* General styles */
+body {
+    width: 100%;
+    height: 100%;
+    background-image:url('house pic.jpg') ;
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-attachment: fixed;
+}
+    
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #403f3f;
+    color: #dbd2d2;
+    padding-top: 5px;
+    min-height: 70px;
+    border-bottom: #121313 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header h1 {
+    float: left;
+    margin-top: 10px;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+/* Section styles */
+section {
+    padding: 5px;    
+    padding-left: 20px;
+
+}
+#home{
+    padding: left -30px;
+    color: white;
+}
+

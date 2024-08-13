@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">   
+    <title>Bootstrap demo</title> 
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          const searchInput = document.getElementById("search-input");
+          const searchButton = document.getElementById("search-button");
+          const cards = document.querySelectorAll(".card");
+
+          function filterCards() {
+              const query = searchInput.value.toLowerCase();
+              cards.forEach(card => {
+                  const cardText = card.textContent.toLowerCase();
+                  if (cardText.includes(query)) {
+                      card.parentElement.style.display = "block";
+                  } else {
+                      card.parentElement.style.display = "none";
+                  }
+              });
+          }
+
+          searchButton.addEventListener("click", function(event) {
+              event.preventDefault();
+              filterCards();
+          });
+
+          searchInput.addEventListener("keyup", filterCards);
+      });
+  </script>
+</head>
+<body>
+  
+    <section id="navbar">
+        <nav class="navbar navbar-expand-sm fixed-top">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+               
+                    <a class="nav-link active" aria-current="page" href="home2.html">🏠</a>
+
+                    <form class="d-flex" role="search">
+                      <input id="search-input" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button id="search-button" class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                
+  
+                            
+                </ul>
+              </div>
+            </div>
+          </nav>
+          </section>
+            
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img src="property 1.jpeg" class="card-img-top" alt="DUPLEX ">
+              <div class="card-body">
+                <h5 class="card-title">DUPLEX </h5>
+                <p class="card-text">Details:Owner: Pavan<br>Phone number: +91 9988226677<br>Location: Vijayawada,MG-road<br>price:60,000,00.</p>                                      
+              </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img src="property 2.jpeg" class="card-img-top" alt="DUPLEXi">
+              <div class="card-body">
+                <h5 class="card-title">DUPLEX</h5>
+                <p class="card-text">Details:Owner: Kalyani<br>Phone number: +91 7728226655<br>Location: Vijayawada,MG-road<br>price:85,000,00.</p>         
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="card" style="width: 18rem;">
+              <img src="property 3.jpeg" class="card-img-top" alt="3-BHK">
+                <div class="card-body">
+                  <h5 class="card-title">3-BHK</h5>
+                  <p class="card-text">Details:Owner: Irshad<br>Phone number: +91 6633226677<br>Location: Nandigama,cm-road<br>price:45,000,00.</p>
+                </div>
+              </div>
+              </div>
+
+            <div class="row">
+            <div class="col-4">
+              <div class="card" style="width: 18rem;">
+                <img src="property 4.jpeg" class="card-img-top" alt="2-BHK">
+                  <div class="card-body">
+                    <h5 class="card-title">2-BHK</h5>
+                    <p class="card-text">Details:Owner: Muteeb<br>Phone number: +91 9933226688<br>Location: Nandigama,cm-road<br>price:40,000,00</p>
+                  </div>
+                </div>
+              </div>
+
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img src="property 5.jpeg" class="card-img-top" alt="3-BHK">
+              <div class="card-body">
+                <h5 class="card-title">3-BHK</h5>
+                <p class="card-text">Details:Owner: Pavan<br>Phone number: +91 6233446689<br>Location: Vijayawada,rtc-road<br>price:48,000,00</p>             
+              </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img src="property 6.jpeg" class="card-img-top" alt="4-BHK">
+              <div class="card-body">
+                <h5 class="card-title">4-BHK</h5>
+                <p class="card-text">Details:Owner: Roopa<br>Phone number: +91 9233486622<br>Location: Guntur,vc-colony<br>price:48,000,00</p>
+              </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="row">   
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img src="property 7.jpeg" class="card-img-top" alt="DUPLEX">
+              <div class="card-body">
+                <h5 class="card-title">DUPLEX</h5>
+                <p class="card-text">Details:Owner: Mani<br>Phone number: +91 8233486611<br>Location: Hyderabad ,musheerabad<br>price:100,000,00</p>
+              </div>
+        </div>  
+      </div>
+
+      <div class="col-4">
+        <div class="card" style="width: 18rem;">
+          <img src="property 8.jpeg" class="card-img-top" alt="SINGLE HOUSE">
+            <div class="card-body">
+              <h5 class="card-title">SINGLE HOUSE</h5>
+              <p class="card-text">Details:Owner: kAREEM<br>Phone number: +91 9233486644<br>Location:Nandigama,cm-road<br>price:75,000,00</p>
+            </div>
+      </div>
+    </div>
+
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img src="property 9.jpeg" class="card-img-top" alt="3-BHK,Single House ">
+              <div class="card-body">
+                <h5 class="card-title">3-BHK,Single House</h5>
+                <p class="card-text">Details:Owner: Manoj<br>Phone number: +91 9977226621<br>Location: Vijayawada,Ealur-road<br>price:55,000,00.</p>            
+              </div>
+            </div>
+        </div>
+        </div>
+
+           <div class="row">
+            <div class="col-4">
+              <div class="card" style="width: 19rem;">
+                <img src="property 10.jpeg"card-img-top" alt="1-BHK,Single House ">
+                  <div class="card-body">
+                    <h5 class="card-title">1-BHK,Single House</h5>
+                    <p class="card-text">Details:Owner: Pavan<br>Phone number: +91 6688226675<br>Location: Vijayawada,MG-road<br>price:28,000,00.</p>                     
+                  </div>
+                </div>
+            </div>
+
+                <div class="col-4">
+                  <div class="card" style="width: 18rem;">
+                    <img src="property 14.jpg" class="card-img-top" alt="1-BHK">
+                      <div class="card-body">
+                        <h5 class="card-title">1-BHK </h5>
+                        <p class="card-text">Details:Owner: Rafath<br>Phone number: +91 9988226677<br>Location:Hyderabad MG-road<br>price:30,000,00.</p>                                            
+                      </div>
+                    </div>
+                    </div>
+
+                    <div class="col-4">
+                      <div class="card" style="width: 18rem;">
+                        <img src="property 12.jpeg" class="card-img-top" alt="4-BHK,Single House ">
+                          <div class="card-body">
+                            <h5 class="card-title">4-BHK,Single House </h5>
+                            <p class="card-text">Details:Owner: Abdul Kareem<br>Phone number: +91 9988226699<br>Location: Nandigama,Pendyala-village<br>price:60,000,00.</p>
+            
+                          </div>
+                        </div>
+                    </div>      
+                  </div>
+                  </div>
+                  </div>
+</body>
+</html>

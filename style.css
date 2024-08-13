@@ -1,0 +1,17 @@
+.card{
+
+    width: 20rem;
+    height: 400px;
+    align-items: center;
+	justify-content: center;
+   
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+.container{
+    padding-top: 20px;
+}

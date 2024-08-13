@@ -1,0 +1,87 @@
+body {
+    font-family: 'Poppins', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw;
+}
+
+.About {
+    width: 60%;
+    margin: 50px;
+    padding: 0px;
+    background-color: #b2d7f4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.About h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333333;
+    text-align: center;
+    text-transform: uppercase;
+  
+
+}
+
+.About p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #666;
+    text-align: center;
+}
+
+.Address {
+    width: 60%;
+    margin: 50px;
+    padding: 0px;
+    background-color: #a6ecc1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.Address h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333333;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.Address p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #666;
+    text-align: center;
+}
+
+
+
+.contact {
+    width: 60%;
+    margin: 50px;
+    padding: 0px;
+    background-color: #60e5cd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.contact h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333333;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.contact p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #666;
+    text-align: center;
+}
